@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Kotlin Fundamentals Code Lab</string>
+    <string name="roll_label">Roll</string>
 </resources>
