@@ -20,10 +20,26 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener { rollDice(resultText) }
 
+        val countUpButton: Button = findViewById(R.id.count_up)
+        countUpButton.setOnClickListener { countUp(resultText) }
+
     }
 
     private fun rollDice(resultText: TextView) {
         val randomInt = Random().nextInt(6) + 1
         resultText.text = randomInt.toString()
+    }
+
+    private fun countUp(resultText: TextView) {
+        when (resultText.text.toString()) {
+            getString(R.string.default_roll_text) -> resultText.text = "1"
+            else -> {
+                val currentRoll = resultText.text.toString().toInt()
+                if (currentRoll < 6) {
+                    val upCount: Int = currentRoll + 1
+                    resultText.text = upCount.toString()
+                }
+            }
+        }
     }
 }

@@ -19,9 +19,16 @@
 
     <Button
         android:id="@+id/roll_button"
-        android:layout_width="88dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="27dp"
         android:text="@string/roll_label" />
+    <Button
+        android:id="@+id/count_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:text="@string/count_up" />
 </LinearLayout>
