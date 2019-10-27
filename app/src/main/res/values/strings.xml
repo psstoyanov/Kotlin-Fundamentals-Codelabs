@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kotlin Fundamentals Code Lab</string>
+    <string name="app_name">Dice Roller</string>
     <string name="default_roll_text">Roll Dice</string>
     <string name="roll_label">Roll</string>
 </resources>
